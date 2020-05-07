@@ -1,0 +1,305 @@
+@font-face {
+  font-family: "Parrafos";
+  src: url("../../fonts/Arciform.otf");
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #B2C8D6;
+  font-family: "Parrafos" !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color: #B2C8D6;
+ font-family: "Parrafos" !important;
+ opacity: 1 /* esto es porque Firefox le reduce la opacidad por defecto */;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color: #B2C8D6;
+ opacity:  1;
+ font-family: "Parrafos" !important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #B2C8D6;
+ font-family: "Parrafos" !important;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../images/bg.jpeg) no-repeat center top;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+.login-box {
+
+  background: #fff;
+  color: black;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 60px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  -webkit-box-shadow: 4px 4px 9px -5px rgba(140, 140, 140, 1);
+  -moz-box-shadow: 4px 4px 9px -5px rgba(140, 140, 140, 1);
+  box-shadow: 4px 4px 9px -5px rgba(140, 140, 140, 1);
+}
+
+/*titulo para celulares*/
+.login-box .avatar {
+  font-family: "Parrafos" !important;
+  width: 180px;
+  height: 28px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: absolute;
+  color: #fff;
+  top: -19px;
+  left: 24%;
+  text-align: center;
+  background: #d87523;
+  padding-top: 7px;
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"] {
+  background: #E7EEF8;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color:#B2C8D6;
+  padding: 12px;
+ 
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  
+}
+
+input[type="password"] {
+  background: #E7EEF8;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color:#B2C8D6;
+  padding: 12px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  width: 260px;
+  height: 25px;
+  font-family: "Parrafos" !important;
+  background: #d87523;
+  color: #fff;
+  font-size: 15px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  
+}
+
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #d87523;
+  color: #fff;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.login-box a:hover {
+  color: #fff;
+}
+
+.login-box .form-control-feedback {
+  position: absolute;
+  padding: 5px;
+  pointer-events: none;
+  color: #B2C8D6;
+  size: 10px;
+  margin-top: 10px;
+
+}
+
+.login-box .centraricon {
+  padding-left: 30px !important;
+}
+
+/* col-xs */
+@media (max-width: 767px) {
+
+  /*body {
+    
+    background: url(../images/bg2.jpg) no-repeat center top;
+  }*/
+  .login-box {
+    width: 320px;
+    height: 240px;
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+
+  }
+}
+
+/* col-sm */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /*body {
+    
+    background: url(../images/bg2.jpg) no-repeat center top;
+  }*/
+  .login-box {
+    width: 320px;
+    height: 240px;
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+
+
+  }
+}
+
+/* col-md */
+@media (min-width: 992px) and (max-width: 1199px) {
+  body {
+
+    background: url(../images/bg2.jpg) no-repeat center top;
+
+  }
+
+  .login-box {
+    width: 320px;
+    height: 240px;
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+
+  }
+}
+
+/*col-lg */
+
+@media (min-width: 1200px) {
+
+  /*body {
+  
+    background: url(../images/bg1.jpeg) no-repeat center top;
+    
+  }*/
+  .login-box {
+    width: 520px;
+    height: 340px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 75%;
+
+  }
+
+  .login-box .avatar {
+    font-family: "Parrafos" !important;
+    width: 280px;
+    height: 40px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    color: #fff;
+    top: -19px;
+    left: 23%;
+    text-align: center;
+    background: #d87523;
+    padding-top: 7px;
+    font-size: 25px;
+  }
+
+  .login-box input[type="submit"] {
+    position: absolute;
+    border: none;
+    outline: none;
+    width: 362px;
+    height: 40px;
+    font-size: 25px;
+    top: 250px;
+    left: 80px;
+    line-height:0px;
+    font-family: "Parrafos" !important;
+    background: #d87523;
+    color: #fff;
+    padding: 25px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+  }
+
+  .uno {
+    margin-top: 10px;
+    
+  }
+  .uno>i{
+  margin-top:10px;
+  margin-left:  5px;
+  }
+
+  .dos {
+    position: absolute;
+    margin-top: 15px ;
+    width: 429px;
+   
+  }
+  .dos>i{
+    margin-top:10px;
+    margin-left:  5px;
+    }
+
+}
